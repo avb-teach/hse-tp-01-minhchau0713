@@ -1,2 +1,2 @@
 #!/bin/bash
-pythin3 collect.py
+pythin3 collect.py "$@"
