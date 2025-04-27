@@ -22,5 +22,3 @@ def collect(input_dir, output_dir):
 
 args = sys.argv[1:]
 collect(args[0], args[1])
-
-
