@@ -13,7 +13,7 @@ def collect(input_dir, output_dir):
             if dest_name in list_names:
                 list_names[dest_name] += 1
                 name, ext = os.path.splitext(filename) # https://pythonworld.ru/moduli/modul-os-path.html
-                dest_name = f"{name}{list_names[dest_name]}{ext}"
+                dest_name = name + str(list_names[dest_name]) + ext
             else:
                 list_names[filename] = 0
             dest_path = output_path / dest_name
